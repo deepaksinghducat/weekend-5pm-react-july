@@ -1,35 +1,47 @@
+import React, { Fragment } from 'react';
+import ReactDOM from 'react-dom';
 import './App.css';
+import { Demo } from './Demo';
+import { Fragments } from './Fragments';
 import { Input } from './Input';
 import { Parent } from './Parent';
+import Referance from './Referance';
+import { Wrapper } from './Wrapper';
+
+
+const UpperRoot = (props) => {
+  return (
+    <div>uppper root</div>
+  )
+}
+
 
 function App() {
 
-  // const data = [
-  //   {
-  //     title : "fsafsdffsad",
-  //     age: 30
-  //   },
-  //   {
-  //     title : "fsafsdffsad",
-  //     age: 30
-  //   },
-  //   {
-  //     title : "fsafsdffsad",
-  //     age: 30
-  //   }
-  // ]
+  const data = [
+    {
+      title: "fsafsdffsad",
+      age: 30
+    },
+    {
+      title: "fsafsdffsad",
+      age: 30
+    },
+    {
+      title: "fsafsdffsad",
+      age: 30
+    }
+  ]
 
   // return (
-  //   <div className="background-red">
-  //     {
-  //       data.map((p) => {
-  //         return (
-  //           <Demo title={p.title} age={p.age} />
-  //         )
-  //       })
-  //     }
+  //   // <Wrapper>
 
-  //   </div>
+
+  //   // </Wrapper>
+
+  //   // <Cart>
+  //   //   <div class="far"></div>
+  //   // </Cart>
   // );
 
   // return (
@@ -38,10 +50,22 @@ function App() {
   //   </div>
   // );
 
+  // return (
+  //   <div>
+  //     <Parent />
+  //   </div>
+  // )
+
+  // return (
+  //   <Fragment>
+  //     {
+  //       ReactDOM.createPortal(<UpperRoot /> ,document.getElementById('upper-root'))
+  //     }
+  //   </Fragment>
+  // )
+
   return (
-    <div>
-      <Parent />
-    </div>
+     <Referance />
   )
 }
 
