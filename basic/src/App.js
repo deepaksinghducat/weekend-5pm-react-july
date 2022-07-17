@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 import ReactDOM from 'react-dom';
 import './App.css';
+import { UseEffect } from './components/UseEffect';
 import { Demo } from './Demo';
 import { Fragments } from './Fragments';
 import { Input } from './Input';
@@ -65,7 +66,7 @@ function App() {
   // )
 
   return (
-     <Referance />
+     <UseEffect />
   )
 }
 
