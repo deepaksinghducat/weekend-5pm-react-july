@@ -8,7 +8,9 @@ const TodoContext = React.createContext({
 
 export const TodoContextProvider = (props) => {
 
-    const todoL = JSON.parse(localStorage.getItem('todos'));
+    const todoLocal  = localStorage.getItem('todos'); 
+
+    const todoL = todoLocal ? JSON.parse(localStorage.getItem('todos')) : [];
 
     const [todos, setTodos] = useState([...todoL]);
 
