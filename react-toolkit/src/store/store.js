@@ -1,6 +1,5 @@
 import { combineReducers, configureStore } from '@reduxjs/toolkit'
 
-
 const products = [
 	{
 		id: 1,
@@ -86,7 +85,6 @@ const CartReducer = (state = { cartItems: [] }, action) => {
 
 	return state;
 }
-
 
 const reducers = combineReducers({
 	product: ProductReducer,
